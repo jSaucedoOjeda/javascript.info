@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World</title>
+</head>
+<body>
+    <!-- The script tag 
+         JavaScript programs can be inserted almost anywhere
+         into an HTML document using the <script> tag -->
+    <script>
+        alert(' Hello, world!')
+    </script>
+
+    <!-- Try on the browser, open the file and see what happens -->
+</body>
+</html>
+
+<!-- The <script> tag has a few attributes that are rarely used nowadays but
+     can still be found in old code: 
+     
+     The type attribute: <script type = ""> It's an old standard required on HTML4 but 
+     it's not required anymore. Also the modern HTML standart totally changed the meaning of this
+     attribute (Andvanced  topic on JavaScript Modules).
+
+     The language attribute: <script language = ""> This attribute was meant to show the language
+     of the script but actually is not usefull because the default language is JavaScript.
+    -->
+    
+<!-- External scripts -->
+<!-- If we have a lot of JavaScript code, we can put it into a separate file 
+     Script files are attached to HTML with the src attribute: 
+     <script src = "/fundamentals/example.js"></script>
+     The Path is an absolute path to the site root. One can also provide a relative path from the current page.
+     for instance, src = "script.js" would mean in the current folder.
+
+     We can give a full URL as well.
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.11/lodash.js"></script>
+    -->
+
+<!-- Recomendations -->
+<!--    - Emmbed javascript into an html is not a good practice for projects
+          but you have to know that exist.
+        - A single <script> tag can't have both the src attribute and code inside.
+        - As a rule, only the simplest scripts are put into HTML. More complex ones reside
+          in separate files.
+        - Always put the script tag after the body tag. (This will secure that your javascript runs after your existing HTML)
+        -->
